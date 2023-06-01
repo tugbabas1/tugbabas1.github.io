@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+}
+  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+    --ff-primary: 'Playfair Display', serif;
+    --ff-secondary: 'Lato', sans-serif;
+    --clr-light: #fff;
+    --clr-dark: #1579EF;
+    --clr-accent: #16e0bd;
+    font-family:var(--ff-secondary) ;
+    font-weight: 400;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-family: var(--ff-primary);
+}
+header h2{
+    color: white;
+    font-weight: 400;
+    position: absolute;
+    font-size: 60px;
+    padding-left: 7%;
+    width: 80%;
+    top:30%
+}
+.filter{
+    height: 100vh;
+    width :100%;
+    position: absolute;
+    top :0;
+    left:0;
+    background-color:  rgba(0, 0, 0, 0.60);
+    filter: blur(5px);
+}
+
+.title{
+    position: absolute;
+    color: white;
+    width: 100%;
+    padding-top: 40px;
+}
+.title img{
+    height: 90px;
+    padding-left: 7%;
+    padding-right:40px ;
+}
+.title h1{
+    font-size: 38px;
+    font-weight: 400;
+    display: inline-block;
+    position: absolute;
+    bottom: 2px;
+}
+.giveacall{
+    position: absolute;
+    color:white ;
+    top: 60%;
+    font-size: 25px;
+    padding: 0.6em 2.8em;
+    background: rgba(5, 5, 5, 0.52);
+    box-shadow: 4px 4px 9px 0px rgba(255, 255, 255, 0.25);
+
+ }
+.giveacall:hover{
+    background: rgba(5, 5, 5,.7);
+}
+.giveacall:active{
+    transform: translateY(0.1em);
+    box-shadow: none;
+}
+a{
+    text-decoration: none;
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+section{
+    padding:0 7%;
+    padding-top: 100px;
+}
+section h2{
+    font-family: var(--ff-primary);
+    font-size: 60px;
+    font-weight: 400;
+}
+td{
+    font-size: 24px;
+}
+.head{
+    color: #5A4242;
+    font-weight: bold;
+}
+table{
+    padding-top: 40px;
+    border-spacing: 10vw 30px;
+}
+h3{
+    font-family: var(--ff-primary);
+    font-size: 38px;
+    font-weight: 400;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.types{
+display: flex;
+align-items: center;
+padding: 3em 0;
+
+}
+.content{
+    flex: 1;
+}
+.content h4{
+    font-family: var(--ff-primary);
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+.imgcontainer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgcontainer img{
+    height: 25vh;
+    max-width: 20vw;
+    margin-left:20% ;
+}
+.type{
+    padding-left: 10%;
+}
+.doors{
+    display: flex;
+    justify-content: space-around;
+    padding: 4em 0;
+}
+/* .doors .imges{
+width: 25%;
+} */
+.imges{
+    width: 25%;
+    text-align: center;
+}
+.imges img{
+    max-width: 100%;
+}
+.imges p{
+    padding: 1em;
+    font-family: var(--ff-primary);
+}
+.brouchers{
+    text-align: center;
+}
+
+.download{
+    color:white ;
+
+    font-size: 25px;
+    padding: 0.6em 2.8em;
+    background: var(--clr-dark);
+    box-shadow: 4px 4px 9px 0px rgba(255, 255, 255, 0.25);
+ }
+.downbox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+footer{
+background: var(--clr-dark);
+color: white;
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+text-align: center;
+align-items: center;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+.icons img{
+    width: 40px;
+    margin: 0 10px;
+}
+footer  h4{
+font-family: var(--ff-primary);
+font-weight: 400;
+font-size: 28px;
+padding-top:10px;
+}
+footer p{
+    font-family: var(--ff-secondary);
+    padding-bottom:10px ;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.project{
+    font-family: var(--ff-secondary);
+    width: 50%;
+    padding: 1em;
+}
+.project h5{
+    font-size: 18px;
+}
+.project h6{
+    font-size: 18px;
+    font-weight: 400;
+}
+.project p{
+    font-size: 18px;
+    font-weight: 300;
+}
+@media (max-width:750px){
+    header h2{
+        font-size: 40px;
+    }
+}
+@media (max-width:650px){
+    header h2{
+        text-align: center;
+        padding-left: 0;
+        width: 100%;
+    }
+    .imgcontainer{
+display: none;
+    }
+    .sec-title{
+        font-size: 32px;
+    }
+    td{
+        font-size: 14px;
+    }
+    .sub-title{
+        font-size: 28px;
+    }
+    .brouchers{
+        font-size: 24px;
+    }
+    .title img{
+        height: 60px;
+    }
+    .title h1{
+        font-size: 28px;
+    }
+}
